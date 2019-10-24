@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 188768731}
   - component: {fileID: 188768730}
   m_Layer: 5
-  m_Name: InputField (1)
+  m_Name: Num InputField (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -827,7 +827,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.000061035156}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &878820963
@@ -1402,6 +1402,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1258978064}
   - component: {fileID: 1258978065}
+  - component: {fileID: 1258978066}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -1435,6 +1436,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77e0e5ad2b771648bc6a8aabd58b8e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1258978066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258978063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e09c2657cbaeb44930bd16ca2c8855, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JsonFile: {fileID: 0}
+  contentRectransform: {fileID: 878820962}
+  cellPerfab: {fileID: 5516581946281984606, guid: 74b7cc1275cc07b43b7e81bcc4347878,
+    type: 3}
+  nameText: {fileID: 620665127}
+  numberText: {fileID: 2094456312}
+  EmailText: {fileID: 771239835}
 --- !u!1 &1306901337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1777,8 +1797,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1258978065}
-        m_MethodName: ClosePopup
+      - m_Target: {fileID: 1258978066}
+        m_MethodName: SaveFileButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1988,7 +2008,7 @@ GameObject:
   - component: {fileID: 1591005739}
   - component: {fileID: 1591005738}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: Name InputField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2332,7 +2352,7 @@ GameObject:
   - component: {fileID: 1726816371}
   - component: {fileID: 1726816370}
   m_Layer: 5
-  m_Name: InputField (2)
+  m_Name: Email InputField (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2712,7 +2732,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1704098572}
   m_HandleRect: {fileID: 1704098571}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
