@@ -14,7 +14,7 @@ public class Animation : MonoBehaviour
         buttonManager.buttonclick = (isOn) =>
         {
             if (isOn == true)
-            {
+            {   
                 Popup();
             }
             else

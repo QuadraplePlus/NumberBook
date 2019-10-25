@@ -853,8 +853,8 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
+  m_ChildScaleWidth: 1
+  m_ChildScaleHeight: 1
 --- !u!1 &978174041
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,7 +937,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1258978065}
+      - m_Target: {fileID: 1681369570}
         m_MethodName: OpnePopup
         m_Mode: 1
         m_Arguments:
@@ -1268,7 +1268,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1258978065}
+      - m_Target: {fileID: 1681369570}
         m_MethodName: ClosePopup
         m_Mode: 1
         m_Arguments:
@@ -1432,9 +1432,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1258978063}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f77e0e5ad2b771648bc6a8aabd58b8e6, type: 3}
+  m_Script: {fileID: 11500000, guid: 07c48e698dbc9a1489d206fd114a2d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameField: {fileID: 1591005739}
+  phoneNumield: {fileID: 188768731}
+  emailField: {fileID: 1726816371}
+  jsonFile: {fileID: 4900000, guid: c37e8e95f452ff147a65a1ccdf1bf83f, type: 3}
+  contentRectransform: {fileID: 878820962}
+  cellPerfab: {fileID: 5516581946281984606, guid: 74b7cc1275cc07b43b7e81bcc4347878,
+    type: 3}
 --- !u!1 &1306901337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1777,8 +1784,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1258978065}
-        m_MethodName: ClosePopup
+      - m_Target: {fileID: 1681369570}
+        m_MethodName: CloseSavePopup
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2244,7 +2251,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c4cdc89842160545926bb6ce153cfef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonManager: {fileID: 1258978065}
+  buttonManager: {fileID: 1681369570}
+--- !u!1 &1681369569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1681369571}
+  - component: {fileID: 1681369570}
+  m_Layer: 0
+  m_Name: ButtonManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1681369570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681369569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f77e0e5ad2b771648bc6a8aabd58b8e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1258978065}
+--- !u!4 &1681369571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681369569}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 105.44656, y: 975.5177, z: -2179.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1704098570
 GameObject:
   m_ObjectHideFlags: 0
